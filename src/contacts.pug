@@ -1,0 +1,104 @@
+doctype html
+html(lang="en")
+    head
+        title Bulma CSS - Contact Forms
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="description" content="Contact forms styled with Bulma")
+        meta(name="author" content="Bulma-Css.com")
+        link(rel="stylesheet" href="css/bulma/bulma-theme.css")
+        link(rel="icon" href="favicon.ico")
+    body
+        .container.is-fluid
+
+            section.section
+                .container
+                    h1.title.has-text-centered Bulma CSS 
+                    p.has-text-centered.subtitle Contact forms built styled with Bulma -  
+                        a(href="https://github.com/bulma-css-templates/bulma-components/blob/master/src/contacts.pug") source code
+
+            hr 
+
+            section.section
+                .container
+                    h2.title.has-text-centered Bulma Contact Form - Text Left
+
+                    .columns
+                        .column.is-6
+                            h4.title.is-spaced.is-4 Let's talk about the future of the internet
+                            p.subtitle We're here to answer your questions and discuss the decentralized future of the internet.
+                            div
+                                .media
+                                    .media-left
+                                        figure.image.is-24x24
+                                            img(src="placeholder/icons/map-marker.svg", alt="")
+                                    .media-content
+                                        .content
+                                            p Pied Piper HQ - 59 Silicon Av.
+                                .media
+                                    .media-left
+                                        figure.image.is-24x24
+                                            img(src="placeholder/icons/phone.svg", alt="")
+                                    .media-content
+                                        .content
+                                            p 555-333-555
+                                .media
+                                    .media-left
+                                        figure.image.is-24x24
+                                            img(src="placeholder/icons/envelope.svg", alt="")
+                                    .media-content
+                                        .content
+                                            p pay-the-piper@piedpiper.com
+
+                        .column.is-5.is-offset-1
+                            form
+                                .field
+                                    .control
+                                        input.input(type="email", placeholder="Email")
+                                .field
+                                    .select.is-fullwidth
+                                        select
+                                            option(disabled, selected) Select product
+                                            option Product 1
+                                            option Product 2
+                                            option Product 3
+                                .field
+                                    .control
+                                        textarea.textarea(rows="5", placeholder="Write something...")
+                                
+                                .field
+                                    .control
+                                        button.button.is-primary.is-fullwidth(type="submit") Submit
+
+            hr 
+
+            section.section
+                .container
+                    h2.title.has-text-centered Bulma Contact Form - Image Left
+
+                    .columns
+                        .column.is-6
+                            img(src="https://bulma.dev/placeholder/pictures/bg_16-9.svg?primary=00d1b2", alt="")
+                        .column.is-6
+                            form
+                                .field
+                                    .control
+                                        input.input(type="email", placeholder="Email")
+                                .field
+                                    .select.is-fullwidth
+                                        select
+                                            option(disabled, selected) Select product
+                                            option Product 1
+                                            option Product 2
+                                            option Product 3
+                                .field
+                                    .control
+                                        textarea.textarea(rows="5", placeholder="Write something...")
+                                
+                                .field
+                                    .control
+                                        button.button.is-primary.is-fullwidth(type="submit") Submit
+
+            hr
+
+            include components/footer.pug 
